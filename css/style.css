@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&family=Roboto&display=swap');
+
+/* font-family: 'Rethink Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+    margin:0;
+    padding:0;
+    background-image: url(../assets/img-bg02.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.roboto {
+    font-family: 'roboto', sans-serif;
+}
+
+header {
+    background-color:rgb(31, 31, 31);
+    padding:10px;
+    text-align: center;
+}
+
+header > h1 {
+    margin:0;
+    color:white;
+    font: 25px 'Roboto', sans-serif;
+}
+
+main {
+    background-image: url(../assets/img-bg01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+#sc-main > article > p {
+    margin-top: 10px; 
+    font: 18px 'Roboto', sans-serif;
+}
+
+#sc-main > article {
+    text-shadow: .5px .5px 2px rgba(0, 0, 0, 0.234);
+}
+
+#sc-main {
+    background-color:rgba(255, 255, 255, 0.434);
+    width: 100%;
+    transition: all .3s;
+}
+
+#sc-main > h2,article,form {
+    padding: 15px;
+}
+
+#email, #nome {
+    width: ;
+}
+
+#submit {
+    border: none;
+    color: white;
+    width: 85%;
+    height:25px;
+    background-color: rgb(31, 31, 31);
+    display: block;
+    margin: 5px auto 5px auto; 
+}
+
+.cx-form {
+    display: block;
+    height: 20px;
+    margin: 5px auto 5px auto;
+    width: 80%;
+}
+
+
+footer {
+    background-color: rgb(31, 31, 31);
+    padding: 15px; 
+    overflow: hidden; 
+    color: white;
+}
+
+article > h2 {
+    font-size: 21px;
+}
+
+article > h2,p {
+    margin: 0;
+}
+
+#sc-footer {
+    padding: 10px;
+}
+
+#face {
+    float: left;
+    margin: 15px;
+    margin-bottom: 0;
+    background-image: url(../assets/face.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 150px; 
+}
+
+footer > article {
+    text-align: left;
+    float: right;
+}
+
+@media screen and (min-width:424px) {
+    #sc-main {
+        width: 320px;
+        display: inline-block;
+        justify-items: flex-end;
+    }
+
+    footer {
+        clear: right;
+    }
+}
