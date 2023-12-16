@@ -3,6 +3,11 @@
 /* font-family: 'Rethink Sans', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin:0;
     padding:0;
@@ -19,28 +24,36 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
+.page {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.55);
+    max-width: 60%;
+    margin: auto;
+    transition: all .3s;
+}
+
 header {
     background-color:rgb(31, 31, 31);
-    padding:10px;
+    padding: 10px 15px;
     text-align: center;
 }
 
 header > h1 {
     margin:0;
     color:white;
-    font: 25px 'Roboto', sans-serif;
+    font: 22px 'Roboto', sans-serif;
 }
 
 main {
     background-image: url(../assets/img-bg01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 15px;
+    padding: 0 15px;
+    overflow: hidden;
 }
 
 #sc-main > article > p {
     margin-top: 10px; 
-    font: 18px 'Roboto', sans-serif;
+    font: 16px 'Roboto', sans-serif;
 }
 
 #sc-main > article {
@@ -48,60 +61,66 @@ main {
 }
 
 #sc-main {
-    background-color:rgba(255, 255, 255, 0.434);
-    width: 100%;
-    transition: all .3s;
+    background-color:rgba(255, 255, 255, 0.622);
+    color:rgba(32, 32, 32, 0.911); 
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.033);
+    margin: 15px auto;
+    width: 250px;
 }
 
-#sc-main > h2,article,form {
+#sc-main > h2,article {
     padding: 15px;
 }
 
-#email, #nome {
-    width: ;
+form {
+    padding: 0 0 15px 0;
+    margin: auto;
+    width: 200px;
 }
 
 #submit {
-    border: none;
     color: white;
-    width: 85%;
-    height:25px;
     background-color: rgb(31, 31, 31);
-    display: block;
-    margin: 5px auto 5px auto; 
+}
+
+#submit:hover {
+    background-color: rgb(70, 70, 70);
+    box-shadow: 0 0 5px rgba(35, 35, 35, 0.589);
 }
 
 .cx-form {
-    display: block;
-    height: 20px;
-    margin: 5px auto 5px auto;
-    width: 80%;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    height: 25px;
+    margin: 0 0 5px 0;
+    padding: 0;
+    width: 200px;
 }
 
 
 footer {
     background-color: rgb(31, 31, 31);
-    padding: 15px; 
-    overflow: hidden; 
+    padding: 30px; 
     color: white;
 }
 
 article > h2 {
-    font-size: 21px;
+    font-size: 18px;
 }
 
 article > h2,p {
     margin: 0;
+    padding: 0;
 }
 
 #sc-footer {
-    padding: 10px;
+    padding: 15px;
 }
 
 #face {
-    float: left;
-    margin: 15px;
-    margin-bottom: 0;
+    float: none;
+    margin: auto;
     background-image: url(../assets/face.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
@@ -110,18 +129,36 @@ article > h2,p {
 }
 
 footer > article {
-    text-align: left;
-    float: right;
+    text-align: justify;
+    float: none;
+    clear: both;
 }
 
 @media screen and (min-width:424px) {
     #sc-main {
-        width: 320px;
-        display: inline-block;
-        justify-items: flex-end;
+        position: relative;
+        float: right;
+        margin-right: 30px;
     }
 
     footer {
         clear: right;
+    }
+
+    #face {
+        float: left;
+        margin: 15px 25px 15px 15px;
+    }
+
+    footer > article {
+        text-align: left;
+        float: right;
+    }
+    
+}
+
+@media screen and (max-width: 970px) {
+    .page {
+        max-width: 100%;
     }
 }
