@@ -47,13 +47,13 @@ main {
     background-image: url(../assets/img-bg01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 15px;
+    padding: 0;
     overflow: hidden;
 }
 
-#sc-main > article > p {
+article > p {
     margin-top: 10px; 
-    font: 16px 'Roboto', sans-serif;
+    font: 20px 'Roboto', sans-serif;
 }
 
 #sc-main > article {
@@ -64,18 +64,18 @@ main {
     background-color:rgba(255, 255, 255, 0.622);
     color:rgba(32, 32, 32, 0.911); 
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.033);
-    margin: 15px auto;
-    width: 250px;
+    margin: 0;
+    width: 100%;
 }
 
-#sc-main > h2,article {
-    padding: 15px;
+#sc-main > article {
+    padding: 15px 15px;
 }
 
-form {
+form { 
     padding: 0 0 15px 0;
     margin: auto;
-    width: 200px;
+    width: 95%;
 }
 
 #submit {
@@ -88,64 +88,93 @@ form {
     box-shadow: 0 0 5px rgba(35, 35, 35, 0.589);
 }
 
+#name, #email {
+    text-indent: 5px;
+}
+
 .cx-form {
     border: none;
     border-radius: 3px;
     display: inline-block;
-    height: 25px;
-    margin: 0 0 5px 0;
+    height: 35px;
+    margin: 0 0 10px 0;
     padding: 0;
-    width: 200px;
+    width: 100%;
 }
 
 
 footer {
     background-color: rgb(31, 31, 31);
-    padding: 30px; 
+    padding: 15px;
     color: white;
 }
 
 article > h2 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 article > h2,p {
     margin: 0;
-    padding: 0;
 }
 
-#sc-footer {
-    padding: 15px;
+.tittle-footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.text-footer {
+    margin: 5px;
+    text-align: justify;
 }
 
 #face {
     float: none;
     margin: auto;
+    margin-top: 10px;
     background-image: url(../assets/face.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
-    width: 100px;
-    height: 150px; 
+    width: 150px;
+    height: 200px;
 }
 
-footer > article {
+footer > article{
     text-align: justify;
     float: none;
     clear: both;
 }
 
 @media screen and (min-width:424px) {
+    main {
+        padding: 15px 0;
+    }
+
     #sc-main {
         position: relative;
         float: right;
         margin-right: 30px;
+        width: 250px; 
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .cx-form {
+        height: 25px;
+        margin: 0 0 5px 0;
+        width: 100%;
     }
 
     footer {
         clear: right;
+        padding: 25px; 
+        overflow: hidden;
     }
 
     #face {
+        width: 130px;
+        height: 180px; 
         float: left;
         margin: 15px 25px 15px 15px;
     }
@@ -154,7 +183,26 @@ footer > article {
         text-align: left;
         float: right;
     }
-    
+
+    .tittle-footer {
+        text-align: left;
+    }
+
+    .text-footer {
+        text-align: left;
+    }
+
+    #sc-footer {
+        padding: 15px;
+    }
+
+    article > h2 {
+        font-size: 18px;
+    }
+
+    article > p {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 970px) {
